@@ -42,7 +42,7 @@
 	vddcx-supply = <&gpu_cc_cx_gdsc>;
 	vdd-supply = <&gpu_cc_gx_gdsc>;
 
-	qcom,min-access-length = <64>;
+	qcom,min-access-length = <32>;
 
 	qcom,ubwc-mode = <2>;
 
