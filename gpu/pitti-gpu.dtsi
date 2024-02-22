@@ -48,6 +48,8 @@
 
 	qcom,enable-ca-jump;
 
+	qcom,tzone-names = "gpuss";
+
 	/* Context aware jump busy penalty in us */
 	qcom,ca-busy-penalty = <12000>;
 
