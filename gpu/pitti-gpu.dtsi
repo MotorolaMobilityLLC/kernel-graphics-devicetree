@@ -1,7 +1,7 @@
 #define MHZ_TO_KBPS(mhz, w) ((mhz * 1000000 * w) / (1024))
 
 &msm_gpu {
-	compatible = "qcom,kgsl-3d0", "qcom,adreno-gpu-a610";
+	compatible = "qcom,kgsl-3d0", "qcom,adreno-gpu-a611";
 	status = "ok";
 
 	reg = <0x5900000 0x90000>;
