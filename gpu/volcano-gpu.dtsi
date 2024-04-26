@@ -1,6 +1,8 @@
 
 #define MHZ_TO_KBPS(mhz, w) ((mhz * 1000000 * w) / (1024))
 
+#define UINT32_MAX 4294967295
+
 /* External feature codes */
 #define FC_UNKNOWN 0x0
 #define FC_AA 0x1
@@ -88,7 +90,8 @@
 		<MHZ_TO_KBPS(1353, 4)>, /* index=5 SVS L1	*/
 		<MHZ_TO_KBPS(1555, 4)>, /* index=6 NOM		*/
 		<MHZ_TO_KBPS(1708, 4)>, /* index=7 NOM		*/
-		<MHZ_TO_KBPS(2092, 4)>; /* index=8 TURBO	*/
+		<MHZ_TO_KBPS(2092, 4)>, /* index=8 TURBO	*/
+		<UINT32_MAX>;		/* index=9*/
 
 	qcom,bus-table-ddr8 =
 		<MHZ_TO_KBPS(0, 4)>,	/* index=0			*/
@@ -99,7 +102,8 @@
 		<MHZ_TO_KBPS(1708, 4)>, /* index=5 SVS L1	*/
 		<MHZ_TO_KBPS(2092, 4)>, /* index=6 NOM		*/
 		<MHZ_TO_KBPS(2736, 4)>, /* index=7 TURBO	*/
-		<MHZ_TO_KBPS(3196, 4)>; /* index=8 TURBO L1	*/
+		<MHZ_TO_KBPS(3196, 4)>, /* index=8 TURBO L1	*/
+		<UINT32_MAX>;		/* index=9*/
 
 	zap-shader {
 		memory-region = <&gpu_microcode_mem>;
