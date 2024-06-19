@@ -56,8 +56,8 @@
 	reg-names = "kgsl_3d0_reg_memory", "cx_dbgc", "rscc", "cx_misc",
 		"qdss_gfx", "qdss_etr", "qdss_tmc";
 
-	interrupts = <0 300 IRQ_TYPE_LEVEL_HIGH>;
-	interrupt-names = "kgsl_3d0_irq";
+	interrupts = <0 300 IRQ_TYPE_LEVEL_HIGH>, <0 80 IRQ_TYPE_LEVEL_HIGH>;
+	interrupt-names = "kgsl_3d0_irq", "cx_host_irq";
 
 	clocks = <&gcc GCC_GPU_MEMNOC_GFX_CLK>,
 			<&gcc GCC_GPU_SNOC_DVM_GFX_CLK>,
@@ -91,7 +91,7 @@
 		<MHZ_TO_KBPS(1555, 4)>, /* index=6 NOM		*/
 		<MHZ_TO_KBPS(1708, 4)>, /* index=7 NOM		*/
 		<MHZ_TO_KBPS(2092, 4)>, /* index=8 TURBO	*/
-		<UINT32_MAX>;		/* index=9*/
+		<MHZ_TO_KBPS(4761, 4)>;	/* index=9*/
 
 	qcom,bus-table-ddr8 =
 		<MHZ_TO_KBPS(0, 4)>,	/* index=0			*/
@@ -103,7 +103,7 @@
 		<MHZ_TO_KBPS(2092, 4)>, /* index=6 NOM		*/
 		<MHZ_TO_KBPS(2736, 4)>, /* index=7 TURBO	*/
 		<MHZ_TO_KBPS(3196, 4)>, /* index=8 TURBO L1	*/
-		<UINT32_MAX>;		/* index=9*/
+		<MHZ_TO_KBPS(4761, 4)>;	/* index=9*/
 
 	zap-shader {
 		memory-region = <&gpu_microcode_mem>;
