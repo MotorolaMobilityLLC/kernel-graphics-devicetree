@@ -151,7 +151,8 @@
 
 			qcom,initial-pwrlevel = <5>;
 
-			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AB)>;
+			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AB)
+				SKU_CODE(PCODE_UNKNOWN, FC_UNKNOWN)>;
 
 			qcom,gpu-pwrlevel@0 {
 				reg = <0>;

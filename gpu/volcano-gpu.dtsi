@@ -14,6 +14,10 @@
 #define FC_AG 0x7
 #define FC_AH 0x8
 
+/* SubPart feature code */
+#define FC_W0 0x00d1
+#define FC_W1 0x00d2
+
 /* Internal feature codes */
 #define FC_Y0 0x00f1
 #define FC_Y1 0x00f2
