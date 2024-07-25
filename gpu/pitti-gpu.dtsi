@@ -32,8 +32,11 @@
 		"gcc_gpu_memnoc_gfx",
 		"gpu_cc_hlos1_vote_gpu_smmu";
 
-	interrupts = <0 177 IRQ_TYPE_LEVEL_HIGH>;
-	interrupt-names = "kgsl_3d0_irq";
+	interrupts = <0 177 IRQ_TYPE_LEVEL_HIGH>, <0 181 IRQ_TYPE_LEVEL_HIGH>;
+	interrupt-names = "kgsl_3d0_irq", "freq_limiter_irq";
+
+	resets = <&gpucc GPU_CC_FREQUENCY_LIMITER_IRQ_CLEAR>;
+	reset-names = "freq_limiter_irq_clear";
 
 	qcom,chipid = <0x06010100>;
 	qcom,gpu-model = "Adreno611v1";
