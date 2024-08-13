@@ -11,11 +11,11 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
 #include "volcano-gpu.dtsi"
-#include "volcano6i-gpu-pwrlevels.dtsi"
+#include "volcano6i-fp1-gpu-pwrlevels.dtsi"
 
 / {
-	model = "Qualcomm Technologies, Inc. Volcano6IP SoC";
+	model = "Qualcomm Technologies, Inc. Volcano6IP FP1 SoC";
 	compatible = "qcom,volcanop";
-	qcom,msm-id = <658 0x10000>;
+	qcom,msm-id = <0x4000292 0x10000>;
 	qcom,board-id = <0 0>;
 };
