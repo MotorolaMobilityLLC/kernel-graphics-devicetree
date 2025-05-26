@@ -78,6 +78,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_VOLCANO), y)
 dtbo-y += gpu/volcano-gpu.dtbo
+dtbo-y += gpu/volcanop-gpu.dtbo
 dtbo-y += gpu/volcano6-gpu.dtbo
 dtbo-y += gpu/volcano6p-gpu.dtbo
 
