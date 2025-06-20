@@ -13,7 +13,8 @@ endif
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += gpu/pineapple-gpu.dtbo \
 		gpu/pineapple-v2-gpu.dtbo \
-		gpu/pineapple-v2-sg-gpu.dtbo
+		gpu/pineapple-v2-sg-gpu.dtbo \
+		gpu/pineapple-v2-iot-gpu.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_SA8155), y)
